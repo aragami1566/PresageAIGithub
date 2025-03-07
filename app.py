@@ -18,7 +18,7 @@ DEEPINFRA_BASE_URL = os.getenv("deepinfra_base_url")
 TWILIO_ACCOUNT_SID = os.getenv("TWILIO_ACCOUNT_SID")
 TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN")
 TWILIO_PHONE_NUMBER = os.getenv("TWILIO_CALLER_NUMBER")
-PUBLIC_HOST = "https://presageaichatbot-g6ghcqg8gxh5apcs.westcentralus-01.azurewebsites.net/"  # Utilise l'URL Azure automatique
+PUBLIC_HOST = "https://presageaichatbot-g6ghcqg8gxh5apcs.westcentralus-01.azurewebsites.net"  # Utilise l'URL Azure automatique
 
 twilio_client = TwilioClient(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
 llm_client = DeepInfraLLM(api_key=DEEPINFRA_API_KEY, base_url=DEEPINFRA_BASE_URL)
