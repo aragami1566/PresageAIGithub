@@ -60,6 +60,10 @@ def create_speech_recognizer():
     audio_config = speechsdk.audio.AudioConfig(stream=push_stream)
     return speechsdk.SpeechRecognizer(speech_config=speech_config, audio_config=audio_config), push_stream
 
+@app.get("/")
+async def root():
+    return {"message": "Serveur de chatbot vocal"}
+
 # Gestion des appels Twilio
 @app.post("/make-call")
 async def make_call(request: Request):
