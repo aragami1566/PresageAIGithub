@@ -1,0 +1,10 @@
+openai
+fastapi
+twilio
+python-dotenv
+azure-cognitiveservices-speech
+numpy
+nltk
+apscheduler
+uvicorn
+nest_asyncio

@@ -1,0 +1,1580 @@
+﻿{
+  "form_pages": [
+    {
+      "id": "feeling_and_relationship_page",
+      "title": "Ressenti et relations",
+      "entities_references": [
+        {
+          "id": "global_feeling_group",
+          "type": "group"
+        },
+        {
+          "id": "relationship_group",
+          "type": "group"
+        }
+      ]
+    },
+    {
+      "id": "behavior_page",
+      "title": "Comportement",
+      "entities_references": [
+        {
+          "id": "behavior_group",
+          "type": "group"
+        }
+      ]
+    },
+    {
+      "id": "capacities_page",
+      "title": "Capacités",
+      "entities_references": [
+        {
+          "id": "capacities_group",
+          "type": "group"
+        }
+      ]
+    },
+    {
+      "id": "observations_page",
+      "title": "Observations",
+      "entities_references": [
+        {
+          "id": "observations_group",
+          "type": "group"
+        }
+      ]
+    }
+  ],
+  "followup_logic_groups": [
+    {
+      "add_after_question_id": "q_moves_in_home",
+      "questions_answers_pairs": [
+        {
+          "question_id": "q_moves_in_home",
+          "answered_value_id": "moves_in_yes"
+        },
+        {
+          "question_id": "q_moves_in_home",
+          "answered_value_id": "moves_in_partially"
+        }
+      ],
+      "followup_entities_references": [
+        {
+          "id": "q_walking_pace",
+          "type": "question"
+        }
+      ]
+    },
+    {
+      "add_after_question_id": "q_swollen_legs",
+      "questions_answers_pairs": [
+        {
+          "question_id": "q_swollen_legs",
+          "answered_value_id": "yes"
+        }
+      ],
+      "followup_entities_references": [
+        {
+          "id": "q_swollen_legs_change",
+          "type": "question"
+        }
+      ]
+    },
+    {
+      "add_after_question_id": "q_trouble_breathing",
+      "questions_answers_pairs": [
+        {
+          "question_id": "q_trouble_breathing",
+          "answered_value_id": "yes"
+        }
+      ],
+      "followup_entities_references": [
+        {
+          "id": "q_breathing_change",
+          "type": "question"
+        }
+      ]
+    },
+    {
+      "add_after_question_id": "q_redness",
+      "questions_answers_pairs": [
+        {
+          "question_id": "q_redness",
+          "answered_value_id": "yes"
+        }
+      ],
+      "followup_entities_references": [
+        {
+          "id": "q_redness_location",
+          "type": "question"
+        }
+      ]
+    },
+    {
+      "add_after_question_id": "q_pain",
+      "questions_answers_pairs": [
+        {
+          "question_id": "q_pain",
+          "answered_value_id": "yes"
+        }
+      ],
+      "followup_entities_references": [
+        {
+          "id": "q_pain_location",
+          "type": "question"
+        }
+      ]
+    },
+    {
+      "add_after_question_id": "q_pain_location",
+      "questions_answers_pairs": [
+        {
+          "question_id": "q_pain_location",
+          "answered_value_id": "pain_type_joints"
+        }
+      ],
+      "followup_entities_references": [
+        {
+          "id": "q_pain_joints_change",
+          "type": "question"
+        }
+      ]
+    },
+    {
+      "add_after_question_id": "q_pain_location",
+      "questions_answers_pairs": [
+        {
+          "question_id": "q_pain_location",
+          "answered_value_id": "pain_type_abdomen"
+        }
+      ],
+      "followup_entities_references": [
+        {
+          "id": "q_pain_abdomen_change",
+          "type": "question"
+        }
+      ]
+    },
+    {
+      "add_after_question_id": "q_pain_location",
+      "questions_answers_pairs": [
+        {
+          "question_id": "q_pain_location",
+          "answered_value_id": "pain_type_thorax"
+        }
+      ],
+      "followup_entities_references": [
+        {
+          "id": "q_pain_thorax_change",
+          "type": "question"
+        }
+      ]
+    },
+    {
+      "add_after_question_id": "q_pain_location",
+      "questions_answers_pairs": [
+        {
+          "question_id": "q_pain_location",
+          "answered_value_id": "pain_type_dental"
+        }
+      ],
+      "followup_entities_references": [
+        {
+          "id": "q_pain_dental_change",
+          "type": "question"
+        }
+      ]
+    },
+    {
+      "add_after_question_id": "q_pain_location",
+      "questions_answers_pairs": [
+        {
+          "question_id": "q_pain_location",
+          "answered_value_id": "pain_type_head"
+        }
+      ],
+      "followup_entities_references": [
+        {
+          "id": "q_pain_head_change",
+          "type": "question"
+        }
+      ]
+    },
+    {
+      "add_after_question_id": "q_pain_location",
+      "questions_answers_pairs": [
+        {
+          "question_id": "q_pain_location",
+          "answered_value_id": "pain_type_elsewhere"
+        }
+      ],
+      "followup_entities_references": [
+        {
+          "id": "q_pain_elsewhere_change",
+          "type": "question"
+        }
+      ]
+    },
+    {
+      "add_after_question_id": "q_cough",
+      "questions_answers_pairs": [
+        {
+          "question_id": "q_cough",
+          "answered_value_id": "yes"
+        }
+      ],
+      "followup_entities_references": [
+        {
+          "id": "q_cough_change",
+          "type": "question"
+        }
+      ]
+    },
+    {
+      "add_after_question_id": "q_has_free_observation",
+      "questions_answers_pairs": [
+        {
+          "question_id": "q_has_free_observation",
+          "answered_value_id": "yes"
+        }
+      ],
+      "followup_entities_references": [
+        {
+          "id": "q_free_observation",
+          "type": "question"
+        },
+        {
+          "id": "q_constant_arterial_pressure",
+          "type": "question"
+        },
+        {
+          "id": "q_constant_pulse",
+          "type": "question"
+        },
+        {
+          "id": "q_constant_oxygen_saturation",
+          "type": "question"
+        },
+        {
+          "id": "q_constant_temperature",
+          "type": "question"
+        },
+        {
+          "id": "q_constant_weight_dressed_without_shoes",
+          "type": "question"
+        },
+        {
+          "id": "q_constant_no_bowel_movement_for_over_3_days",
+          "type": "question"
+        }
+      ]
+    },
+    {
+      "add_after_question_id": "q_hospitalization_night",
+      "questions_answers_pairs": [
+        {
+          "question_id": "q_hospitalization_night",
+          "answered_value_id": "yes"
+        }
+      ],
+      "followup_entities_references": [
+        {
+          "id": "q_hospitalization_night_duration_count",
+          "type": "question"
+        }
+      ]
+    },
+    {
+      "add_after_question_id": "q_digestive_problems",
+      "questions_answers_pairs": [
+        {
+          "question_id": "q_digestive_problems",
+          "answered_value_id": "yes"
+        }
+      ],
+      "followup_entities_references": [
+        {
+          "id": "q_digestive_problems_types",
+          "type": "question"
+        }
+      ]
+    }
+  ],
+  "form_entities": {
+    "questions": [
+      {
+        "id": "q_condition_change",
+        "type": "SINGULAR_CHOICE",
+        "title": "Selon vous,",
+        "help": "Depuis les 7 derniers jours, vous avez remarqué une amélioration (Mieux), une diminution (Moins bien) ou une stabilité (L'état de la personne n'a pas changé) de l'état général de la personne aidée.",
+        "values_ids": [
+          "condition_change_stable",
+          "condition_change_better",
+          "condition_change_worse"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_tired",
+        "type": "SINGULAR_CHOICE",
+        "title": "La personne aidée semble fatiguée",
+        "help": "On définit la fatigue comme une sensation désagréable et pénible qui perdure malgré le sommeil et le repos. La personne ne se sent pas capable de mener à bien ses activités quotidiennes.\n\n Oui : La personne aidée vous semble fatiguée.\nNon : La personne aidée ne vous semble pas fatiguée.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_indifferent",
+        "type": "SINGULAR_CHOICE",
+        "title": "La personne aidée semble indifférente",
+        "help": "Oui : La personne aidée ne réagit pas ou ne répond pas à ce que vous dites ou faites alors qu'elle vous entend et/ou vous voit.\nNon : La personne aidée réagit à ce que vous dites, à ce que vous faites.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_limited_communication",
+        "type": "SINGULAR_CHOICE",
+        "title": "La personne aidée communique peu",
+        "help": "Oui : La personne aidée vous répond uniquement par oui / non, ou ne vous répond pas alors qu'elle vous entend.\nNon : La personne aidée vous répond, elle parle avec vous.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_solitude",
+        "type": "SINGULAR_CHOICE",
+        "title": "À des contacts ou des visites avec son entourage ?",
+        "help": "Oui : Depuis les 7 derniers jours, la personne a vu d’autres personnes (amis, famille, voisins, …) \n Non : Depuis les 7 derniers jours, la personne n'a pas vu d'autres personne en dehors des intervenants / professionnels",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_does_not_recognize_me",
+        "type": "SINGULAR_CHOICE",
+        "title": "Ne me reconnaît pas (cochez 'non' si la personne vous reconnaît)",
+        "help": "Oui : La personne aidée ne sait plus qui vous êtes.\nNon : La personne aidée vous reconnaît.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_incoherent_communication",
+        "type": "SINGULAR_CHOICE",
+        "title": "Communique de façon incohérente",
+        "help": "Oui : La personne aidée communique de manière étrange, non sensée, incompréhensible.\nNon : La personne aidée communique normalement.\n\nIl n'est pas nécessaire de poser directement la question à la personne aidée, basez vous sur votre observation.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_knows_day_of_week",
+        "type": "SINGULAR_CHOICE",
+        "title": "Connaît le jour de la semaine",
+        "help": "Un moyen simple de vérifier si la personne aidée est désorientée dans le temps, si elle se repère dans la semaine est de lui demander si elle connaît le jour de la semaine. Répondez non si aujourd'hui, la personne ne connaît pas le jour de la semaine.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_aggressive",
+        "type": "SINGULAR_CHOICE",
+        "title": "Est agressive",
+        "help": "Oui : La personne aidée est agressive envers vous ou quelqu'un de son entourage.\nNon : La personne aidée n'est pas agressive.\n\nIl n'est pas nécessaire de poser directement la question à la personne aidée, basez vous sur votre observation.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_sad",
+        "type": "SINGULAR_CHOICE",
+        "title": "Est triste",
+        "help": "On peut observer la tristesse à travers le comportement ou le discours de la personne: pleurs fréquents, perte de plaisir dans le quotidien, perte de l’élan vital.\n\nOui : La personne aidée vous semble triste.\nNon : La personne aidée ne vous semble pas triste.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_memory_complaint",
+        "type": "SINGULAR_CHOICE",
+        "title": "Se plaint de troubles de la mémoire",
+        "help": "Oui: la personne aidée se plaint d'oublis, de perte d'objets, de difficultés à se souvenir de faits récents.\nNon : La personne aidée ne se plaint pas de trouble de la mémoire.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_forget_when_i_came_by",
+        "type": "SINGULAR_CHOICE",
+        "title": "Oublie quand je suis passée",
+        "help": "Oui: la personne aidée a oublié mon précédant passage.\nNon: la personne se souvient de mon précédant passage.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_objects_inappropriate_places",
+        "type": "SINGULAR_CHOICE",
+        "title": "Range des objets dans des endroits inappropriés",
+        "help": "Oui : Vous avez remarqué des objets rangés dans des endroits inappropriés ou inhabituels.\nNon : Vous n'avez pas remarqué d'objet rangé dans des endroits inappropriés. \n\nIl n'est pas nécessaire de poser directement la question à la personne aidée, basez vous sur votre observation.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_sleep_complaint",
+        "type": "SINGULAR_CHOICE",
+        "title": "Se plaint de troubles du sommeil",
+        "help": "Oui : La personne aidée se plaint de son sommeil: difficultés d'endormissement, sensation de ne pas dormir, réveils en milieu de nuit sans pouvoir se rendormir.\nNon : La personne ne se plaint pas de trouble du sommeil.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_no_appetite",
+        "type": "SINGULAR_CHOICE",
+        "title": "N'a pas envie de manger (cochez 'non' si vous ne remarquez pas de perte d'appétit)",
+        "help": "Oui : Vous remarquez que la personne aidée n'a pas d'appétit, elle n'a pas envie de manger.\nNon : La personne a envie de manger et vous ne remarquez pas de perte d'appétit.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_gets_up",
+        "type": "SINGULAR_CHOICE",
+        "title": "Se lève",
+        "help": "Oui seule : La personne aidée se lève seule.\nOui avec de l'aide humaine ou matérielle : La personne aidée ne se lève pas seule, mais se lève avec de l'aide humaine ou matérielle (canne, déambulateur).\nNon : La personne aidée ne peut pas se lever même avec de l'aide humaine ou matérielle.",
+        "values_ids": [
+          "gets_up_yes",
+          "gets_up_partially",
+          "gets_up_no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_moves_in_home",
+        "type": "SINGULAR_CHOICE",
+        "title": "Se déplace dans son domicile",
+        "help": "Oui seule : La personne aidée se déplace seule.\nOui avec de l'aide humaine ou matérielle : La personne aidée ne se déplace pas seule, mais se déplace avec de l'aide humaine ou matérielle (canne, déambulateur, fauteuil roulant).\nNon : La personne aidée ne peut pas se déplacer par elle même, même avec de l'aide humaine ou matérielle.",
+        "values_ids": [
+          "moves_in_yes",
+          "moves_in_partially",
+          "moves_in_no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_walking_pace",
+        "type": "SINGULAR_CHOICE",
+        "title": "Vitesse de marche",
+        "help": "Normale : La personne aidée se déplace d'un bon pas.\nLente : La personne aidée se déplace difficilement ou de manière hésitante.",
+        "values_ids": [
+          "walking_type_norm",
+          "walking_type_slow"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_washes",
+        "type": "SINGULAR_CHOICE",
+        "title": "A fait sa toilette",
+        "help": "Oui : Aujourd'hui, la personne aidée a fait sa toilette seule.\nNon : Aujourd'hui, la personne aidée n'a pas fait sa toilette seule.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_prepares_meals",
+        "type": "SINGULAR_CHOICE",
+        "title": "Prépare ses repas",
+        "help": "Oui : La personne aidée prépare ou réchauffe ses plats seule.\nNon : La personne aidée ne prépare ni ne réchauffe seule ses plats.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_leaves_home",
+        "type": "SINGULAR_CHOICE",
+        "title": "Sort du domicile",
+        "help": "Oui : La personne aidée est sortie de son domicile durant ces 7 derniers jours, seule ou accompagnée.\nNon : La personne aidée n'est pas sortie de son domicile ces 7 derniers jours.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_eats_as_usual",
+        "type": "SINGULAR_CHOICE",
+        "title": "Mange autant que d'habitude",
+        "help": "Oui : Aujourd'hui, la personne aidée mange seule ou avec de l'aide comme d'habitude.\nNon : Aujourd'hui, la personne aidée ne mange pas comme d'habitude même avec de l'aide.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_recent_fall",
+        "type": "SINGULAR_CHOICE",
+        "title": "A chuté durant ces 7 derniers jours",
+        "help": "Oui : La personne aidée a chuté au moins une fois durant ces 7 derniers jours.\nNon : La personne aidée n'a pas chuté ces 7 derniers jours.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_swollen_legs",
+        "type": "SINGULAR_CHOICE",
+        "title": "A les jambes gonflées",
+        "help": "Oui : Vous constatez que la personne aidée a les jambes gonflées.\nNon : Vous ne trouvez pas que les jambes du bénéficiaire sont gonflées.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_swollen_legs_change",
+        "type": "SINGULAR_CHOICE",
+        "title": "Ses jambes sont",
+        "help": "Plus gonflées : Vous remarquez que les jambes ont gonflé depuis les 7 derniers jours.\nPareilles : Vous n'avez pas remarqué d'évolution.\nMoins gonflées : Vous avez remarqué une diminution du gonflement des jambes.",
+        "values_ids": [
+          "swollen_legs_similar",
+          "swollen_legs_more",
+          "swollen_legs_less"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_trouble_breathing",
+        "type": "SINGULAR_CHOICE",
+        "title": "Respire mal",
+        "help": "Oui : Vous trouvez que la personne aidée respire mal.\nNon : Vous ne trouvez pas que la personne aidée respire mal.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_breathing_change",
+        "type": "SINGULAR_CHOICE",
+        "title": "Sa respiration est",
+        "help": "Plus difficile : Vous remarquez que la respiration est plus difficile depuis les 7 derniers jours.\nPareille : Vous n'avez pas remarqué d'évolution concernant la respiration.\nMoins difficile : Vous avez remarqué une amélioration de la respiration depuis les 7 derniers jours.",
+        "values_ids": [
+          "breathing_similar",
+          "breathing_more",
+          "breathing_less"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_seems_feverish",
+        "type": "SINGULAR_CHOICE",
+        "title": "Semble fiévreuse",
+        "help": "Oui : Il vous semble que la personne aidée a de la fièvre (sueur, frissons).\nNon : La personne aidée ne semble pas avoir de fièvre.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_pain",
+        "type": "SINGULAR_CHOICE",
+        "title": "A des douleurs",
+        "help": "Oui : La personne aidée se plaint de douleurs.\nNon : La personne aidée ne se plaint pas de douleurs.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_redness",
+        "type": "SINGULAR_CHOICE",
+        "title": "Avez-vous remarqué des rougeurs sur le corps ?",
+        "help": "Oui : Indiquez oui si vous avez remarqué des rougeurs et si oui, localisez-les. \nNon : si vous n’avez pas remarqué de rougeur.",
+        "values_ids": [
+          "yes",
+          "no"
+        ]
+      },
+      {
+        "id": "q_redness_location",
+        "type": "MULTIPLE_CHOICE",
+        "title": "Localiser les rougeurs",
+        "help": "",
+        "values_ids": [
+          "redness_heels",
+          "redness_buttocks",
+          "redness_hip",
+          "redness_occiput",
+          "redness_arm",
+          "redness_face",
+          "redness_other"
+        ]
+      },
+      {
+        "id": "q_sensory_disturbances",
+        "type": "MULTIPLE_CHOICE",
+        "title": "Avez-vous remarqué que la personne semble :",
+        "help": "Si la personne ne présente aucune altération sensorielle, ne rien cocher.",
+        "values_ids": [
+          "visual_disturbances",
+          "hearing_impairment",
+          "olfactory_disorders"
+        ]
+      },
+      {
+        "id": "q_pain_location",
+        "type": "MULTIPLE_CHOICE",
+        "title": "Localiser les douleurs",
+        "help": "Vous devez localiser les douleurs (articulation et dos, abdomen (ventre), thorax (poitrine) ou tête). Dans le cas où la douleur est ailleurs, indiquez le en sélectionnant \"ailleurs\"). Vous pouvez indiquer plusieurs localisations dans le cas ou la personne aidée se plaint de plusieurs douleurs.",
+        "values_ids": [
+          "pain_type_joints",
+          "pain_type_abdomen",
+          "pain_type_thorax",
+          "pain_type_head",
+          "pain_type_dental",
+          "pain_type_elsewhere"
+        ]
+      },
+      {
+        "id": "q_pain_joints_change",
+        "type": "SINGULAR_CHOICE",
+        "title": "Comment a évolué récemment la douleur aux articulations ou au dos ?",
+        "help": "Déterminez le niveau d'intensité de la douleur relativement à la situation il y a 7 jours.",
+        "values_ids": [
+          "pain_joints_similar",
+          "pain_joints_more",
+          "pain_joints_less"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_pain_abdomen_change",
+        "type": "SINGULAR_CHOICE",
+        "title": "Comment a évolué récemment la douleur à l'abdomen (ventre) ?",
+        "help": "Déterminez le niveau d'intensité de la douleur relativement à la situation il y a 7 jours.",
+        "values_ids": [
+          "pain_abdomen_similar",
+          "pain_abdomen_more",
+          "pain_abdomen_less"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_pain_thorax_change",
+        "type": "SINGULAR_CHOICE",
+        "title": "Comment a évolué récemment la douleur au thorax (poitrine) ?",
+        "help": "Déterminez le niveau d'intensité de la douleur relativement à la situation il y a 7 jours.",
+        "values_ids": [
+          "pain_thorax_similar",
+          "pain_thorax_more",
+          "pain_thorax_less"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_pain_dental_change",
+        "type": "SINGULAR_CHOICE",
+        "title": "Comment a évolué récemment la douleur dentaire ?",
+        "help": "Déterminez le niveau d'intensité de la douleur relativement à la situation il y a 7 jours.",
+        "values_ids": [
+          "pain_dental_more",
+          "pain_dental_less",
+          "pain_dental_similar"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_pain_head_change",
+        "type": "SINGULAR_CHOICE",
+        "title": "Comment a évolué récemment la douleur à la tête ?",
+        "help": "Déterminez le niveau d'intensité de la douleur relativement à la situation il y a 7 jours.",
+        "values_ids": [
+          "pain_head_more",
+          "pain_head_less",
+          "pain_head_similar"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_pain_elsewhere_change",
+        "type": "SINGULAR_CHOICE",
+        "title": "Comment a évolué récemment la douleur ailleurs ?",
+        "help": "Déterminez le niveau d'intensité de la douleur relativement à la situation il y a 7 jours.",
+        "values_ids": [
+          "pain_elsewhere_similar",
+          "pain_elsewhere_more",
+          "pain_elsewhere_less"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_cough",
+        "type": "SINGULAR_CHOICE",
+        "title": "Tousse",
+        "help": "Oui : Depuis ces 7 derniers jours, vous avez remarqué que la personne aidée tousse et cela de manière importante ou  fréquente.\nNon: Vous n'avez pas remarqué que la personne aidée tousse fréquemment ou de manière importante.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_cough_change",
+        "type": "SINGULAR_CHOICE",
+        "title": "La personne tousse",
+        "help": "Plus : Vous avez remarqué que la personne tousse plus régulièrement ou de manière plus prononcée depuis les 7 derniers jours.\nPareil : La personne tousse, mais vous n'avez pas remarqué d'évolution.\nMoins : Vous avez remarqué que la personne tousse moins régulièrement ou de manière moins prononcée depuis les 7 derniers jours.",
+        "values_ids": [
+          "cough_change_similar",
+          "cough_change_more",
+          "cough_change_less"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_weight_change",
+        "type": "SINGULAR_CHOICE",
+        "title": "A pris / perdu du poids",
+        "help": "Sans objet : Vous n'avez pas remarqué de perte ou de prise de poids.\nAugmentation : Vous avez remarqué une prise de poids de la personne aidée de l'ordre de 5% ou plus en un mois. Cela correspond à une prise de 2 kg si la personne pèse 40 kg ou au gain d'une taille de pantalon.\nDiminution : Vous avez remarqué une perte de poids de la personne aidée de l'ordre de 5% ou plus en un mois. Cela correspond à la perte de 2 kg si la personne pèse 40 kg ou à la perte d'une taille de pantalon.",
+        "values_ids": [
+          "weight_similar",
+          "weight_more",
+          "weight_less"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_digestive_problems",
+        "type": "SINGULAR_CHOICE",
+        "title": "A des troubles digestifs ?",
+        "help": "Plusieurs troubles sont possibles Diarrhée, Nausées ou Vomissement. Diarrhée : augmentation de la fréquence des selles avec plus de trois selles en 24 heures et une modification de leur consistance, les selles devenant molles ou liquides. Nausées : sensation désagréable au niveau de l'estomac et de la gorge correspondant à une envie de vomir. Vomissements : rejet du contenu de l'estomac par la bouche, il est possible de vomir des aliments, de la bile ou beaucoup plus rarement, du sang.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_digestive_problems_types",
+        "type": "MULTIPLE_CHOICE",
+        "title": "Selectionner les troubles digestifs :",
+        "help": "",
+        "values_ids": [
+          "c_digestive_problems_types_diarrhea",
+          "c_digestive_problems_types_nausea",
+          "c_digestive_problems_types_vomiting"
+        ]
+      },
+      {
+        "id": "q_emergencies",
+        "type": "SINGULAR_CHOICE",
+        "title": "Est passée aux urgences récemment",
+        "help": "Oui : La personne aidée est passée aux urgences depuis la dernière fois que vous avez rempli ce questionnaire.\nNon : La personne aidée n'est pas passée aux urgences depuis la dernière fois que vous avez rempli ce questionnaire.",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_emergency_date",
+        "type": "DATE",
+        "title": "Indiquez la date du passage au urgence",
+        "help": "Si vous ne la connaissez pas, indiquez la date la plus proche.",
+        "validators": [
+          "not_empty"
+        ]
+      },
+      {
+        "id": "q_hospitalization_night",
+        "type": "SINGULAR_CHOICE",
+        "title": "A été hospitalisée une nuit ou plus",
+        "help": "Oui : La personne aidée a été hospitalisée au moins une nuit depuis la dernière fois que vous avez rempli ce questionnaire.\nNon : La personne aidée n'a pas été hospitalisée depuis la dernière fois que vous avez rempli ce questionnaire, ou bien l'hospitalisation a duré moins d'une nuit (hospitalisation de jour).",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_hospitalization_night_duration_count",
+        "type": "NUMBER",
+        "title": "Indiquez le nombre de nuits passées à l'hôpital",
+        "help": "Par exemple, indiquez 2 pour une personne admise à l'hôpital le lundi et sortie le mecredi suivant. Indiquez 7 pour une personne restée à l'hôpital une semaine.",
+        "validators": [
+          "not_empty"
+        ]
+      },
+      {
+        "id": "q_hospitalization_start_date",
+        "type": "DATE",
+        "title": "Indiquez la date du début de l’hospitalisation",
+        "help": "Si vous ne la connaissez pas, indiquez la date la plus proche.",
+        "validators": [
+          "not_empty"
+        ]
+      },
+      {
+        "id": "q_has_free_observation",
+        "type": "SINGULAR_CHOICE",
+        "title": "Avez vous d'autres observations à communiquer ?",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_free_observation",
+        "type": "STRING",
+        "title": "Décrivez simplement vos observations ou l’expression de besoins complementaires de la personne accompagnée",
+        "help": "",
+        "validators": []
+      },
+      {
+        "id": "q_constant_arterial_pressure",
+        "type": "STRING",
+        "title": "Pression artérielle systolique / Pression artérielle diastolique (en cmHg)",
+        "help": "",
+        "validators": []
+      },
+      {
+        "id": "q_constant_pulse",
+        "type": "STRING",
+        "title": "Pouls (battements par minutes)",
+        "help": "",
+        "validators": []
+      },
+      {
+        "id": "q_constant_oxygen_saturation",
+        "type": "STRING",
+        "title": "Taux de Saturation en oxygène (SpO2) (%)",
+        "help": "",
+        "validators": []
+      },
+      {
+        "id": "q_constant_temperature",
+        "type": "STRING",
+        "title": "Température (°C)",
+        "help": "",
+        "validators": []
+      },
+      {
+        "id": "q_constant_weight_dressed_without_shoes",
+        "type": "STRING",
+        "title": "Poids habillé sans chaussures (Kg)",
+        "help": "",
+        "validators": []
+      },
+      {
+        "id": "q_constant_no_bowel_movement_for_over_3_days",
+        "type": "SINGULAR_CHOICE",
+        "title": "Pas de selles depuis plus de 3 jours",
+        "help": "",
+        "values_ids": [
+          "yes",
+          "no"
+        ],
+        "validators": []
+      },
+      {
+        "id": "q_ask_patient_if_presage_can_improve_its_quality_of_life_2",
+        "type": "SINGULAR_CHOICE",
+        "title": "Si la personne aidée est en capacité de répondre, nous vous remercions de lui demander si elle considère que Présage Care peut améliorer sa qualité de vie en alertant lorsqu'un problème de santé risque d'arriver",
+        "help": "Indiquez oui si la personne aidée considère que Présage peut améliorer sa qualité de vie en alertant lorsqu'un problème de santé risque d'arriver. Indiquez non sinon.",
+        "values_ids": [
+          "c_ask_patient_if_presage_can_improve_its_quality_of_life_2_yes",
+          "c_ask_patient_if_presage_can_improve_its_quality_of_life_2_no",
+          "c_ask_patient_if_presage_can_improve_its_quality_of_life_2_cannot_answer"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_ask_patient_if_he_feel_safer_knowing_he_is_being_followed_by_presage_2",
+        "type": "SINGULAR_CHOICE",
+        "title": "Si la personne aidée est en capacité de répondre, nous vous remercions de lui demander si elle se sent plus en sécurité en sachant être suivie par Présage Care.",
+        "help": "Indiquez oui si la personne aidée se sent plus en sécurité en sachant bénéficier du dispositif médical Présage Care. Indiquez non sinon.",
+        "values_ids": [
+          "c_ask_patient_if_he_feel_safer_knowing_he_is_being_followed_by_presage_2_yes",
+          "c_ask_patient_if_he_feel_safer_knowing_he_is_being_followed_by_presage_2_no",
+          "c_ask_patient_if_he_feel_safer_knowing_he_is_being_followed_by_presage_2_cannot_answer"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      },
+      {
+        "id": "q_ask_patient_if_he_has_had_assistance_of_a_nurse_in_the_last_30_days",
+        "type": "SINGULAR_CHOICE",
+        "title": "Si la personne aidée est en capacité de répondre, nous vous remercions de lui demander si depuis les 30 derniers jours elle a bénéficié de l'intervention d'un(e) Infirmier(e) à domicile. Indiquer ici la réponse :",
+        "help": "Indiquez oui si un(e) infirmier(e) est venue au domicile au moins une fois durant les 30 derniers jours.",
+        "values_ids": [
+          "c_ask_patient_if_he_has_had_assistance_of_a_nurse_in_the_last_30_days_yes",
+          "c_ask_patient_if_he_has_had_assistance_of_a_nurse_in_the_last_30_days_no",
+          "c_ask_patient_if_he_has_had_assistance_of_a_nurse_in_the_last_30_days_can_not_answer_with_masseur_physiotherapist_intervened",
+          "c_ask_patient_if_he_has_had_assistance_of_a_nurse_in_the_last_30_days_can_not_answer_with_no_masseur_physiotherapist_intervened"
+        ],
+        "validators": [
+          "required_any_value"
+        ]
+      }
+    ],
+    "values": [
+      {
+        "id": "yes",
+        "title": "Oui",
+        "value": "true"
+      },
+      {
+        "id": "no",
+        "title": "Non",
+        "value": "false"
+      },
+      {
+        "id": "condition_change_stable",
+        "title": "L'état de la personne aidée n'a pas changé",
+        "value": "condition_change_stable"
+      },
+      {
+        "id": "condition_change_better",
+        "title": "La personne va mieux",
+        "value": "condition_change_better"
+      },
+      {
+        "id": "condition_change_worse",
+        "title": "La personne va moins bien",
+        "value": "condition_change_worse"
+      },
+      {
+        "id": "gets_up_yes",
+        "title": "Oui seule",
+        "value": "gets_up_yes"
+      },
+      {
+        "id": "gets_up_no",
+        "title": "Non",
+        "value": "gets_up_no"
+      },
+      {
+        "id": "gets_up_partially",
+        "title": "Oui avec de l'aide humaine ou matérielle",
+        "value": "gets_up_partially"
+      },
+      {
+        "id": "moves_in_yes",
+        "title": "Oui seule",
+        "value": "moves_in_yes"
+      },
+      {
+        "id": "moves_in_no",
+        "title": "Non",
+        "value": "moves_in_no"
+      },
+      {
+        "id": "moves_in_partially",
+        "title": "Oui avec de l'aide humaine ou matérielle",
+        "value": "moves_in_partially"
+      },
+      {
+        "id": "walking_type_norm",
+        "title": "Normale",
+        "value": "walking_type_norm"
+      },
+      {
+        "id": "walking_type_slow",
+        "title": "Lente",
+        "value": "walking_type_slow"
+      },
+      {
+        "id": "swollen_legs_similar",
+        "title": "Pareilles",
+        "value": "swollen_legs_similar"
+      },
+      {
+        "id": "swollen_legs_more",
+        "title": "Plus gonflées",
+        "value": "swollen_legs_more"
+      },
+      {
+        "id": "swollen_legs_less",
+        "title": "Moins gonflées",
+        "value": "swollen_legs_less"
+      },
+      {
+        "id": "breathing_similar",
+        "title": "Pareille",
+        "value": "breathing_similar"
+      },
+      {
+        "id": "breathing_more",
+        "title": "Plus difficile",
+        "value": "breathing_more"
+      },
+      {
+        "id": "breathing_less",
+        "title": "Moins difficile",
+        "value": "breathing_less"
+      },
+      {
+        "id": "visual_disturbances",
+        "title": "Avoir des difficultés à voir ce qui l'entoure",
+        "value": "visual_disturbances"
+      },
+      {
+        "id": "hearing_impairment",
+        "title": "Vous entendre difficilement",
+        "value": "hearing_impairment"
+      },
+      {
+        "id": "olfactory_disorders",
+        "title": "Mal repérer les odeurs qui l'entourent",
+        "value": "olfactory_disorders"
+      },
+      {
+        "id": "pain_type_joints",
+        "title": "Articulations et dos",
+        "value": "pain_type_joints"
+      },
+      {
+        "id": "pain_type_abdomen",
+        "title": "Abdomen (ventre)",
+        "value": "pain_type_abdomen"
+      },
+      {
+        "id": "pain_type_thorax",
+        "title": "Thorax (poitrine)",
+        "value": "pain_type_thorax"
+      },
+      {
+        "id": "pain_type_head",
+        "title": "Tête",
+        "value": "pain_type_head"
+      },
+      {
+        "id": "pain_type_dental",
+        "title": "Dentaire",
+        "value": "pain_type_dental"
+      },
+      {
+        "id": "pain_type_elsewhere",
+        "title": "Ailleurs",
+        "value": "pain_type_elsewhere"
+      },
+      {
+        "id": "pain_joints_similar",
+        "title": "Pareille",
+        "value": "pain_joints_similar"
+      },
+      {
+        "id": "pain_joints_more",
+        "title": "Plus douloureuse",
+        "value": "pain_joints_more"
+      },
+      {
+        "id": "pain_joints_less",
+        "title": "Moins douloureuse",
+        "value": "pain_joints_less"
+      },
+      {
+        "id": "pain_abdomen_similar",
+        "title": "Pareille",
+        "value": "pain_abdomen_similar"
+      },
+      {
+        "id": "pain_abdomen_more",
+        "title": "Plus douloureuse",
+        "value": "pain_abdomen_more"
+      },
+      {
+        "id": "pain_abdomen_less",
+        "title": "Moins douloureuse",
+        "value": "pain_abdomen_less"
+      },
+      {
+        "id": "pain_thorax_similar",
+        "title": "Pareille",
+        "value": "pain_thorax_similar"
+      },
+      {
+        "id": "pain_thorax_more",
+        "title": "Plus douloureuse",
+        "value": "pain_thorax_more"
+      },
+      {
+        "id": "pain_thorax_less",
+        "title": "Moins douloureuse",
+        "value": "pain_thorax_less"
+      },
+      {
+        "id": "pain_dental_similar",
+        "title": "Pareille",
+        "value": "pain_dental_similar"
+      },
+      {
+        "id": "pain_dental_more",
+        "title": "Plus douloureuse",
+        "value": "pain_dental_more"
+      },
+      {
+        "id": "pain_dental_less",
+        "title": "Moins douloureuse",
+        "value": "pain_dental_less"
+      },
+      {
+        "id": "pain_head_similar",
+        "title": "Pareille",
+        "value": "pain_head_similar"
+      },
+      {
+        "id": "pain_head_more",
+        "title": "Plus douloureuse",
+        "value": "pain_head_more"
+      },
+      {
+        "id": "pain_head_less",
+        "title": "Moins douloureuse",
+        "value": "pain_head_less"
+      },
+      {
+        "id": "pain_elsewhere_similar",
+        "title": "Pareille",
+        "value": "pain_elsewhere_similar"
+      },
+      {
+        "id": "pain_elsewhere_more",
+        "title": "Plus douloureuse",
+        "value": "pain_elsewhere_more"
+      },
+      {
+        "id": "pain_elsewhere_less",
+        "title": "Moins douloureuse",
+        "value": "pain_elsewhere_less"
+      },
+      {
+        "id": "cough_change_similar",
+        "title": "Pareil",
+        "value": "cough_change_similar"
+      },
+      {
+        "id": "cough_change_more",
+        "title": "Plus",
+        "value": "cough_change_more"
+      },
+      {
+        "id": "cough_change_less",
+        "title": "Moins",
+        "value": "cough_change_less"
+      },
+      {
+        "id": "weight_similar",
+        "title": "Sans objet",
+        "value": "weight_similar"
+      },
+      {
+        "id": "weight_more",
+        "title": "Augmentation",
+        "value": "weight_more"
+      },
+      {
+        "id": "weight_less",
+        "title": "Diminution",
+        "value": "weight_less"
+      },
+      {
+        "id": "redness_heels",
+        "title": "Talons",
+        "value": "redness_heels"
+      },
+      {
+        "id": "redness_buttocks",
+        "title": "Fesses",
+        "value": "redness_buttocks"
+      },
+      {
+        "id": "redness_hip",
+        "title": "Hanche",
+        "value": "redness_hip"
+      },
+      {
+        "id": "redness_occiput",
+        "title": "Derrière de la tête (occiput)",
+        "value": "redness_occiput"
+      },
+      {
+        "id": "redness_arm",
+        "title": "Bras",
+        "value": "redness_arm"
+      },
+      {
+        "id": "redness_face",
+        "title": "Visage",
+        "value": "redness_face"
+      },
+      {
+        "id": "redness_other",
+        "title": "Autre",
+        "value": "redness_other"
+      },
+      {
+        "id": "c_ask_patient_if_presage_can_improve_its_quality_of_life_2_yes",
+        "title": "Oui",
+        "value": "c_ask_patient_if_presage_can_improve_its_quality_of_life_2_yes"
+      },
+      {
+        "id": "c_ask_patient_if_presage_can_improve_its_quality_of_life_2_no",
+        "title": "Non",
+        "value": "c_ask_patient_if_presage_can_improve_its_quality_of_life_2_no"
+      },
+      {
+        "id": "c_ask_patient_if_presage_can_improve_its_quality_of_life_2_cannot_answer",
+        "title": "La personne n'est pas en capacité de répondre",
+        "value": "c_ask_patient_if_presage_can_improve_its_quality_of_life_2_cannot_answer"
+      },
+      {
+        "id": "c_ask_patient_if_he_feel_safer_knowing_he_is_being_followed_by_presage_2_yes",
+        "title": "Oui",
+        "value": "c_ask_patient_if_he_feel_safer_knowing_he_is_being_followed_by_presage_2_yes"
+      },
+      {
+        "id": "c_ask_patient_if_he_feel_safer_knowing_he_is_being_followed_by_presage_2_no",
+        "title": "Non",
+        "value": "c_ask_patient_if_he_feel_safer_knowing_he_is_being_followed_by_presage_2_no"
+      },
+      {
+        "id": "c_ask_patient_if_he_feel_safer_knowing_he_is_being_followed_by_presage_2_cannot_answer",
+        "title": "La personne n'est pas en capacité de répondre",
+        "value": "c_ask_patient_if_he_feel_safer_knowing_he_is_being_followed_by_presage_2_cannot_answer"
+      },
+      {
+        "id": "c_ask_patient_if_he_has_had_assistance_of_a_nurse_in_the_last_30_days_yes",
+        "title": "Oui",
+        "value": "c_ask_patient_if_he_has_had_assistance_of_a_nurse_in_the_last_30_days_yes"
+      },
+      {
+        "id": "c_ask_patient_if_he_has_had_assistance_of_a_nurse_in_the_last_30_days_no",
+        "title": "Non",
+        "value": "c_ask_patient_if_he_has_had_assistance_of_a_nurse_in_the_last_30_days_no"
+      },
+      {
+        "id": "c_ask_patient_if_he_has_had_assistance_of_a_nurse_in_the_last_30_days_can_not_answer_with_masseur_physiotherapist_intervened",
+        "title": "La personne n’est pas en capacité de répondre mais je sais qu’un infirmier est intervenu",
+        "value": "c_ask_patient_if_he_has_had_assistance_of_a_nurse_in_the_last_30_days_can_not_answer_with_masseur_physiotherapist_intervened"
+      },
+      {
+        "id": "c_ask_patient_if_he_has_had_assistance_of_a_nurse_in_the_last_30_days_can_not_answer_with_no_masseur_physiotherapist_intervened",
+        "title": "La personne n’est pas en capacité de répondre mais je ne sais pas si un infirmier est intervenu",
+        "value": "c_ask_patient_if_he_has_had_assistance_of_a_nurse_in_the_last_30_days_can_not_answer_with_no_masseur_physiotherapist_intervened"
+      },
+      {
+        "id": "c_digestive_problems_types_diarrhea",
+        "title": "Diarrhée",
+        "value": "c_digestive_problems_types_diarrhea"
+      },
+      {
+        "id": "c_digestive_problems_types_nausea",
+        "title": "Nausées",
+        "value": "c_digestive_problems_types_nausea"
+      },
+      {
+        "id": "c_digestive_problems_types_vomiting",
+        "title": "Vomissements",
+        "value": "c_digestive_problems_types_vomiting"
+      }
+    ],
+    "groups": [
+      {
+        "id": "global_feeling_group",
+        "title": "1/ Votre ressenti global",
+        "entities_references": [
+          {
+            "id": "q_condition_change",
+            "type": "question"
+          },
+          {
+            "id": "q_tired",
+            "type": "question"
+          }
+        ]
+      },
+      {
+        "id": "relationship_group",
+        "title": "2/ Relations avec la personne aidée",
+        "entities_references": [
+          {
+            "id": "q_indifferent",
+            "type": "question"
+          },
+          {
+            "id": "q_limited_communication",
+            "type": "question"
+          },
+          {
+            "id": "q_solitude",
+            "type": "question"
+          }
+        ]
+      },
+      {
+        "id": "behavior_group",
+        "title": "3/ Comportement. Aujourd'hui, vous remarquez que la personne aidée :",
+        "entities_references": [
+          {
+            "id": "q_does_not_recognize_me",
+            "type": "question"
+          },
+          {
+            "id": "q_incoherent_communication",
+            "type": "question"
+          },
+          {
+            "id": "q_knows_day_of_week",
+            "type": "question"
+          },
+          {
+            "id": "q_aggressive",
+            "type": "question"
+          },
+          {
+            "id": "q_sad",
+            "type": "question"
+          },
+          {
+            "id": "q_memory_complaint",
+            "type": "question"
+          },
+          {
+            "id": "q_forget_when_i_came_by",
+            "type": "question"
+          },
+          {
+            "id": "q_objects_inappropriate_places",
+            "type": "question"
+          },
+          {
+            "id": "q_sleep_complaint",
+            "type": "question"
+          },
+          {
+            "id": "q_no_appetite",
+            "type": "question"
+          }
+        ]
+      },
+      {
+        "id": "capacities_group",
+        "title": "4/ Capacités physiques et sensorielles : Aujourd'hui, la personne aidée :",
+        "entities_references": [
+          {
+            "id": "q_gets_up",
+            "type": "question"
+          },
+          {
+            "id": "q_moves_in_home",
+            "type": "question"
+          },
+          {
+            "id": "q_washes",
+            "type": "question"
+          },
+          {
+            "id": "q_prepares_meals",
+            "type": "question"
+          },
+          {
+            "id": "q_leaves_home",
+            "type": "question"
+          },
+          {
+            "id": "q_eats_as_usual",
+            "type": "question"
+          },
+          {
+            "id": "q_recent_fall",
+            "type": "question"
+          }
+        ]
+      },
+      {
+        "id": "observations_group",
+        "title": "5/ Vos observations. La personne aidée :",
+        "entities_references": [
+          {
+            "id": "q_swollen_legs",
+            "type": "question"
+          },
+          {
+            "id": "q_trouble_breathing",
+            "type": "question"
+          },
+          {
+            "id": "q_seems_feverish",
+            "type": "question"
+          },
+          {
+            "id": "q_sensory_disturbances",
+            "type": "question"
+          },
+          {
+            "id": "q_redness",
+            "type": "question"
+          },
+          {
+            "id": "q_pain",
+            "type": "question"
+          },
+          {
+            "id": "q_cough",
+            "type": "question"
+          },
+          {
+            "id": "q_weight_change",
+            "type": "question"
+          },
+          {
+            "id": "q_digestive_problems",
+            "type": "question"
+          },
+          {
+            "id": "q_emergencies",
+            "type": "question"
+          },
+          {
+            "id": "q_hospitalization_night",
+            "type": "question"
+          },
+          {
+            "id": "q_has_free_observation",
+            "type": "question"
+          }
+        ]
+      }
+    ],
+    "values_groups": []
+  }
+}
