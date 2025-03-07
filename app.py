@@ -344,8 +344,3 @@ async def media_stream(websocket: WebSocket):
         recognizer.stop_continuous_recognition()
         logging.info("Session STT terminée.")
 
-if __name__ == "__main__":
-    import uvicorn, nest_asyncio
-    nest_asyncio.apply()
-    PORT = int(os.getenv("PORT", 5050))
-    uvicorn.run(app, host="0.0.0.0", port=PORT)
